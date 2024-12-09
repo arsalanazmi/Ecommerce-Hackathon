@@ -187,7 +187,7 @@ const Homepage = () => {
             <div className="flex justify-end items-center w-full md:w-[46.25vw]">
               <div className="flex justify-evenly md:justify-end items-center flex-wrap gap-2 md:gap-[0.833vw] w-full">
                 {men?.map((data: MenCartContentType) => (
-                  <div className="w-[46%] md:w-[20.833vw]">
+                  <div key={data?.id} className="w-[46%] md:w-[20.833vw]">
                     <img
                       src={data?.img}
                       alt={data?.title}
@@ -234,7 +234,7 @@ const Homepage = () => {
             <div className="flex justify-end items-center w-full md:w-[46.25vw]">
               <div className="flex justify-evenly md:justify-end items-center flex-wrap gap-2 md:gap-[0.833vw] w-full">
                 {women?.map((data: WomenCartContentType) => (
-                  <div className="w-[46%] md:w-[20.833vw]">
+                  <div key={data?.id} className="w-[46%] md:w-[20.833vw]">
                     <img
                       src={data?.img}
                       alt={data?.title}
